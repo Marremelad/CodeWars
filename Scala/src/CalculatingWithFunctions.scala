@@ -2,10 +2,10 @@ object CalculatingWithFunctions extends App {
 //  Description:
 //  This time we want to write calculations using functions and get the results. Let's have a look at some examples:
 //
-//  seven(times(five))   ==  35
-//  four(plus(nine))     ==  13
-//  eight(minus(three))  ==   5
-//  six(dividedBy(two))  ==   3
+//  seven(times(five())   ==  35
+//  four(plus(nine())     ==  13
+//  eight(minus(three())  ==   5
+//  six(dividedBy(two())  ==   3
 //
 //  Requirements:
 //
