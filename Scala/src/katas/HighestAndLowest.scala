@@ -1,4 +1,4 @@
-package Katas
+package katas
 
 object HighestAndLowest extends App {
 //  Description

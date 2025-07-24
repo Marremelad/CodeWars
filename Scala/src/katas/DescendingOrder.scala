@@ -1,4 +1,4 @@
-package Katas
+package katas
 
 object DescendingOrder extends App {
 //  Description:

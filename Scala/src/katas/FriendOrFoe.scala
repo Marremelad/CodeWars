@@ -1,4 +1,4 @@
-package Katas
+package katas
 
 object FriendOrFoe extends App {
 //  Description:
