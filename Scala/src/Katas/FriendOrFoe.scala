@@ -1,3 +1,5 @@
+package Katas
+
 object FriendOrFoe extends App {
 //  Description:
 //  Make a program that filters a list of strings and returns a list with only your friends name in it.
