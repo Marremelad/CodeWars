@@ -7,7 +7,7 @@ object RunLengthEncoding extends App {
   def rle(s1: String): String = {
     @tailrec
     def grouper(s2: String, previous: Char, acc: String = "", result: List[String] = Nil): List[String] = {
-      // Reverse the list of group, after prepending, to get the correct order.
+      // Reverse the list of groups, after prepending, to get the correct order.
       if (s2.length <= 0) (acc :: result).reverse
       else {
         val current = s2.head
