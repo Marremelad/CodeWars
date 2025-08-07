@@ -7,17 +7,14 @@ object RunLengthEncoding extends App {
 
   def rle(s: String): String = {
     @tailrec
-    def rec(remaining: String, acc: List[String]): List[String] = {
-      if (remaining.isEmpty) acc.reverse
-      else {
-        val (group, rest) = remaining.span(_ == remaining.head)
-        rec(rest, group :: acc)
-      }
+    def go(chars: List[Char], acc: String): String = chars match {
+      case Nil => acc
+      case head :: _ =>
+        val (same, different) = chars.span(_ == head)
+        val encoded = if (same.length == 1) head.toString else s"${same.length}$head"
+        go(different, acc + encoded)
     }
-
-    rec(s, Nil)
-      .map(group => if (group.length == 1) group.head.toString else s"${group.length}${group.head}")
-      .mkString("")
+    go(s.toList, "")
   }
 
   println(rle(s))
